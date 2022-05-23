@@ -1,4 +1,4 @@
-package com.javaex.ex02;
+package com.javaex.ex03;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
