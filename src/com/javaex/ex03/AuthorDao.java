@@ -44,7 +44,6 @@ public class AuthorDao {
 			String query = "";
 			query += " insert into author ";
 			query += " values(seq_author_id.nextval, ?, ?) ";
-			System.out.println(query);
 			
 			//바인딩
 			pstmt = conn.prepareStatement(query);
@@ -103,7 +102,6 @@ public class AuthorDao {
 			String query = "";
 			query += " delete from author ";
 			query += " where author_Id = ? ";
-			System.out.println(query);
 			
 			//바인딩
 			pstmt = conn.prepareStatement(query);
@@ -162,7 +160,6 @@ public class AuthorDao {
 			query += " set author_name = ?, ";
 			query += "     author_desc = ? ";
 			query += " where author_id = ? ";
-			System.out.println(query);
 			
 			//바인딩
 			pstmt = conn.prepareStatement(query);
@@ -227,7 +224,6 @@ public class AuthorDao {
 			query += " 		  author_name, ";
 			query += "   	  author_desc ";
 			query += " from	author ";
-			System.out.println(query);
 			
 			// 바인딩
 			

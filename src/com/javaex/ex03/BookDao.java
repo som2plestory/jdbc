@@ -33,7 +33,6 @@ public class BookDao {
 			String query = "";
 			query += " insert into book ";
 			query += " values(seq_book_id.nextval, ?, ?, ?, ?) ";
-			System.out.println(query); //확인
 			
 			// 바인딩
 			pstmt = conn.prepareStatement(query);
@@ -92,7 +91,6 @@ public class BookDao {
 			String query = "";
 			query += " delete from book ";
 			query += " where book_id = ?";
-			System.out.println(query); //확인
 			
 			// 바인딩
 			pstmt = conn.prepareStatement(query);
@@ -152,7 +150,6 @@ public class BookDao {
 			query += "     pub_date = ?, ";
 			query += "     author_id = ? ";
 			query += " where book_id = ?";
-			System.out.println(query); //확인
 			
 			// 바인딩
 			pstmt = conn.prepareStatement(query);
@@ -220,7 +217,6 @@ public class BookDao {
 			query += "        author_name ";
 			query += " from book, author ";
 			query += " where book.author_id = author.author_id ";
-			System.out.println(query); //확인
 			
 			// 바인딩
 			pstmt = conn.prepareStatement(query);
@@ -306,7 +302,6 @@ public class BookDao {
 			query += " and (b.title like ? ";
 			query += "		or b.pubs like ? ";
 			query += "		or a.author_name like ? )";
-			System.out.println(query); //확인
 			
 			// 바인딩
 			String sear = '%'+search+'%';
